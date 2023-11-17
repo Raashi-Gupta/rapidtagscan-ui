@@ -10,6 +10,8 @@ import { VehicleDetailsComponent } from './pages/vehicle-details/vehicle-details
 import { ZoneMappingComponent } from './pages/zone-mapping/zone-mapping.component';
 import { LoginComponent } from './pages/login/login.component';
 import { HttpClientModule } from '@angular/common/http';
+import { DashboardComponent } from './pages/dashboard/dashboard.component';
+import { WelcomeComponent } from './pages/welcome/welcome.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,6 +20,8 @@ import { HttpClientModule } from '@angular/common/http';
     VehicleDetailsComponent,
     ZoneMappingComponent,
     LoginComponent,
+    DashboardComponent,
+    WelcomeComponent,
   ],
   imports: [
     BrowserModule,

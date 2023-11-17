@@ -5,6 +5,7 @@ import { ZoneCreationComponent } from './pages/zone-creation/zone-creation.compo
 import { ZoneMappingComponent } from './pages/zone-mapping/zone-mapping.component';
 import { ScannerCreationComponent } from './pages/scanner-creation/scanner-creation.component';
 import { LoginComponent } from './pages/login/login.component';
+import { DashboardComponent } from './pages/dashboard/dashboard.component';
 
 const routes: Routes = [
   {path:'vehicleDetails',component:VehicleDetailsComponent},
@@ -12,6 +13,8 @@ const routes: Routes = [
   {path:'zoneMapping',component:ZoneMappingComponent},
   {path:'scannerCreation',component:ScannerCreationComponent},
   {path:'login',component:LoginComponent},
+  {path:'dashboard',component:DashboardComponent},
+  
   { path: '', redirectTo: '/home', pathMatch: 'full' }
 ];
 
