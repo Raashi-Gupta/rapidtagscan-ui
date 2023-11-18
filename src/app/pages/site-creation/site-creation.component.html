@@ -1,0 +1,21 @@
+
+<div class="container">
+
+    <h5>Site Creation</h5>
+</div>
+
+<form [formGroup]="reactiveForm" (ngSubmit)="onReactiveSubmit(reactiveForm.value)">
+    <div class="row">
+      <div class="col">
+        <input formControlName="siteName" type="text" class="form-control" placeholder="Site Name">
+      </div>
+      <div class="col">
+        <input formControlName="siteDescription" type="text" class="form-control" placeholder="Description">
+      </div>
+      <div class="col">
+        <input formControlName="siteCode" type="text" class="form-control" placeholder="Site Code">
+      </div>
+    </div>
+<button class="btn btn-primary">Submit</button>
+
+  </form>

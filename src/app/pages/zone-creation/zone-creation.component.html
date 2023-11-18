@@ -1,1 +1,30 @@
-<p>zone-creation works!</p>
+<div class="container">
+
+    <h5>Zone Creation</h5>
+</div>
+
+<form [formGroup]="reactiveForm" (ngSubmit)="onReactiveSubmit(reactiveForm.value)">
+    <div class="row">
+        <div class="col">
+            <input formControlName="siteName" type="text" class="form-control" placeholder="Zone Name">
+        </div>
+        <div class="col">
+            <input formControlName="siteDescription" type="text" class="form-control" placeholder="Zone Code">
+        </div>
+        <div class="col">
+            <div class="dropdown show">
+                <a class="btn btn-secondary dropdown-toggle" href="" role="button" id="dropdownMenuLink"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Dropdown link
+                </a>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button class="btn btn-primary">Submit</button>
+
+</form>

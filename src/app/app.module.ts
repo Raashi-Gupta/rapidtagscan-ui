@@ -15,6 +15,7 @@ import { WelcomeComponent } from './pages/welcome/welcome.component';
 import { FastTagComponent } from './pages/fast-tag/fast-tag.component';
 import { VehicleTrackerComponent } from './pages/vehicle-tracker/vehicle-tracker.component';
 import { VehicleDetailsComponent } from './pages/vehicle-details/vehicle-details.component';
+import { SiteCreationComponent } from './pages/site-creation/site-creation.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,6 +29,7 @@ import { VehicleDetailsComponent } from './pages/vehicle-details/vehicle-details
     FastTagComponent,
     VehicleTrackerComponent,
     VehicleDetailsComponent,
+    SiteCreationComponent,
   ],
   imports: [
     BrowserModule,
