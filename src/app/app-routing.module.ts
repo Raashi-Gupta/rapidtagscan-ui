@@ -9,6 +9,7 @@ import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { VehicleTrackerComponent } from './pages/vehicle-tracker/vehicle-tracker.component';
 import { FastTagComponent } from './pages/fast-tag/fast-tag.component';
 import { SiteCreationComponent } from './pages/site-creation/site-creation.component';
+import { WelcomeComponent } from './pages/welcome/welcome.component';
 
 const routes: Routes = [
   {path:'vehicleDetails',component:VehicleDetailsComponent},
@@ -21,6 +22,7 @@ const routes: Routes = [
   {path:'vehicalTracker',component:VehicleTrackerComponent},
   {path:'fastTag',component:FastTagComponent},
   {path:'siteCreation',component:SiteCreationComponent},
+  {path:'welcome',component:WelcomeComponent},
   { path: '', redirectTo: '/home', pathMatch: 'full' }
 ];
 

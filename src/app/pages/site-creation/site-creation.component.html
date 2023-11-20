@@ -1,21 +1,34 @@
 
-<div class="container">
 
+
+  <div class="container">
     <h5>Site Creation</h5>
 </div>
 
-<form [formGroup]="reactiveForm" (ngSubmit)="onReactiveSubmit(reactiveForm.value)">
-    <div class="row">
+<form *ngIf="reactiveForm" [formGroup]="reactiveForm" (ngSubmit)="onReactiveSubmit(reactiveForm.value)">
+  <div class="row">
       <div class="col">
-        <input formControlName="siteName" type="text" class="form-control" placeholder="Site Name">
+          <input formControlName="siteName" type="text" class="form-control" placeholder="Site Name">
+          <div *ngIf="reactiveForm.get('siteName')?.invalid && (reactiveForm.get('siteName')?.dirty || reactiveForm.get('siteName')?.touched)"
+              class="text-danger">
+              Site Name is required
+          </div>
       </div>
       <div class="col">
-        <input formControlName="siteDescription" type="text" class="form-control" placeholder="Description">
+          <input formControlName="siteDescription" type="text" class="form-control" placeholder="Description">
+          <div *ngIf="reactiveForm.get('siteDescription')?.invalid && (reactiveForm.get('siteDescription')?.dirty || reactiveForm.get('siteDescription')?.touched)"
+              class="text-danger">
+              Description is required
+          </div>
       </div>
       <div class="col">
-        <input formControlName="siteCode" type="text" class="form-control" placeholder="Site Code">
+          <input formControlName="siteCode" type="text" class="form-control" placeholder="Site Code">
+          <div *ngIf="reactiveForm.get('siteCode')?.invalid && (reactiveForm.get('siteCode')?.dirty || reactiveForm.get('siteCode')?.touched)"
+              class="text-danger">
+              Site Code is required
+          </div>
       </div>
-    </div>
-<button class="btn btn-primary">Submit</button>
+  </div>
+  <button class="btn btn-primary">Submit</button>
+</form>
 
-  </form>
